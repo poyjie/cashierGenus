@@ -25,7 +25,6 @@ Partial Class Form1
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         txtsku = New TextBox()
         Label1 = New Label()
-        Button2 = New Button()
         Label5 = New Label()
         Label6 = New Label()
         DataGridView1 = New DataGridView()
@@ -44,7 +43,7 @@ Partial Class Form1
         lbluser = New Label()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
-        Button1 = New Button()
+        btncheckout = New Button()
         Label4 = New Label()
         txtchange = New TextBox()
         Label3 = New Label()
@@ -79,18 +78,6 @@ Partial Class Form1
         Label1.Size = New Size(44, 21)
         Label1.TabIndex = 1
         Label1.Text = "SKU:"
-        ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.Orange
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(12, 538)
-        Button2.Margin = New Padding(4)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(96, 73)
-        Button2.TabIndex = 11
-        Button2.Text = "PETTY CASH"
-        Button2.UseVisualStyleBackColor = False
         ' 
         ' Label5
         ' 
@@ -173,7 +160,7 @@ Partial Class Form1
         ListView1.Location = New Point(512, 137)
         ListView1.Margin = New Padding(4)
         ListView1.Name = "ListView1"
-        ListView1.Size = New Size(617, 382)
+        ListView1.Size = New Size(617, 256)
         ListView1.TabIndex = 15
         ListView1.UseCompatibleStateImageBehavior = False
         ListView1.View = View.Details
@@ -234,7 +221,7 @@ Partial Class Form1
         TabControl1.Controls.Add(TabPage3)
         TabControl1.Controls.Add(TabPage4)
         TabControl1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TabControl1.Location = New Point(512, 526)
+        TabControl1.Location = New Point(512, 405)
         TabControl1.Name = "TabControl1"
         TabControl1.SelectedIndex = 0
         TabControl1.Size = New Size(617, 206)
@@ -242,7 +229,7 @@ Partial Class Form1
         ' 
         ' TabPage1
         ' 
-        TabPage1.Controls.Add(Button1)
+        TabPage1.Controls.Add(btncheckout)
         TabPage1.Controls.Add(Label4)
         TabPage1.Controls.Add(txtchange)
         TabPage1.Controls.Add(Label3)
@@ -257,17 +244,17 @@ Partial Class Form1
         TabPage1.Text = "CASH"
         TabPage1.UseVisualStyleBackColor = True
         ' 
-        ' Button1
+        ' btncheckout
         ' 
-        Button1.BackColor = Color.Orange
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(419, 54)
-        Button1.Margin = New Padding(4)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(96, 73)
-        Button1.TabIndex = 16
-        Button1.Text = "Checkout"
-        Button1.UseVisualStyleBackColor = False
+        btncheckout.BackColor = Color.Orange
+        btncheckout.ForeColor = Color.White
+        btncheckout.Location = New Point(409, 54)
+        btncheckout.Margin = New Padding(4)
+        btncheckout.Name = "btncheckout"
+        btncheckout.Size = New Size(96, 73)
+        btncheckout.TabIndex = 16
+        btncheckout.Text = "Checkout"
+        btncheckout.UseVisualStyleBackColor = False
         ' 
         ' Label4
         ' 
@@ -378,7 +365,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(1145, 749)
+        ClientSize = New Size(1145, 629)
         Controls.Add(transnum)
         Controls.Add(TabControl1)
         Controls.Add(lbluser)
@@ -388,7 +375,6 @@ Partial Class Form1
         Controls.Add(DataGridView1)
         Controls.Add(Label6)
         Controls.Add(Label5)
-        Controls.Add(Button2)
         Controls.Add(Label1)
         Controls.Add(txtsku)
         Controls.Add(lbltransnumb)
@@ -409,7 +395,6 @@ Partial Class Form1
 
     Friend WithEvents txtsku As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents DataGridView1 As DataGridView
@@ -437,6 +422,6 @@ Partial Class Form1
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btncheckout As Button
     Friend WithEvents transnum As Label
 End Class
